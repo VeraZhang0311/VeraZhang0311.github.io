@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tianzi Zhang — Robotics engineer working on locomotion and robot learning."
+    />
+    <title>Tianzi Zhang — Robotics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260826-3" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Tianzi Zhang home">
+        <span class="brand-mark">TZ</span><span>Tianzi Zhang</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a class="active" href="index.html">Projects</a>
+        <a href="about.html">About</a>
+        <a
+          class="nav-github"
+          href="https://www.linkedin.com/in/tianzi-zhang-805387255/"
+          target="_blank"
+          rel="noreferrer"
+          >LinkedIn <span>↗</span></a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">
+          <span class="status-dot"></span> Robotics · Learning
+        </p>
+        <h1>Towards robots that<br /><em>move, learn, and adapt.</em></h1>
+        <p class="hero-copy">
+          Exploring robot learning across agile locomotion, motion imitation,
+          and general-purpose behavior learning.
+        </p>
+        <a class="text-link" href="#selected-work"
+          >Explore selected work <span>↓</span></a
+        >
+      </section>
+
+      <section class="work" id="selected-work">
+        <div class="section-heading">
+          <h2>Selected work</h2>
+          <p>01—03</p>
+        </div>
+
+        <article class="project-card">
+          <div class="project-media media-split media-grid-four">
+            <video autoplay muted loop playsinline preload="metadata" poster="">
+              <source src="demos/all_terrains.webm" type="video/webm" />
+            </video>
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="demos/stairs.mp4" type="video/mp4" />
+            </video>
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="demos/jump_isaacsim.mp4" type="video/mp4" />
+            </video>
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="demos/jump.mp4" type="video/mp4" />
+            </video>
+            <span class="media-label"
+              >Terrain-Aware Locomotion / Motion Skills</span
+            >
+          </div>
+          <div class="project-info">
+            <div class="project-number">01</div>
+            <div>
+              <p class="project-type">Agile Locomotion</p>
+              <h3>Perceptive Locomotion &amp;<br />Motion Skill Learning</h3>
+              <p class="project-description">
+                Learning terrain-aware locomotion and reusable motion skills for
+                a wheeled-legged robot, with robust sim-to-real deployment
+                across diverse terrains.
+              </p>
+              <div class="tags">
+                <span>Perceptive Locomotion</span><span>AMP</span
+                ><span>Sim-to-Real</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reversed">
+          <div class="project-media media-stack">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="demos/bfm0_tracking.mp4" type="video/mp4" />
+            </video>
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="demos/bfm0_disturbance.mp4" type="video/mp4" />
+            </video>
+            <span class="media-label">
+              Left: Reference / Right: BFM-Zero Inference
+            </span>
+          </div>
+          <div class="project-info">
+            <div class="project-number">02</div>
+            <div>
+              <p class="project-type">Foundation Model</p>
+              <h3>Motion Foundation Model<br />Deployment with BFM-Zero</h3>
+              <p class="project-description">
+                Adapting BFM-Zero, a motion foundation model, to a
+                wheeled-legged robot, from diverse skill learning to
+                frozen-policy latent optimization, enabling robust motion
+                tracking with rapid recovery from external disturbances.
+              </p>
+              <div class="tags">
+                <span>BFM-Zero</span><span>Unsupervised RL</span
+                ><span>Latent Optimization</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="demos/dance.mp4" type="video/mp4" />
+            </video>
+            <span class="media-label">Imitation Learning</span>
+          </div>
+          <div class="project-info">
+            <div class="project-number">03</div>
+            <div>
+              <p class="project-type">Imitation Learning</p>
+              <h3>Motion Imitation Learning<br />with BeyondMimic</h3>
+              <p class="project-description">
+                Learning expressive dancing from demonstrations with
+                BeyondMimic, from animation to real-world deployment.
+              </p>
+              <div class="tags">
+                <span>BeyondMimic</span><span>Motion Tracking</span
+                ><span>Imitation Learning</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer-statement">
+        Learning to make robots <br /><em>learn.</em>
+      </p>
+      <div class="footer-meta">
+        <p>© <span data-year></span> Tianzi Zhang</p>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/tianzi-zhang-805387255/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn ↗</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
